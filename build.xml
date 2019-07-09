@@ -55,7 +55,7 @@
 	</target>
 	
 	<!-- ========= The main target "all" ========= -->
-	<target name="all" depends="clean,build,scompile,sonar" />
+	<target name="all" depends="clean,build,compile,sonar" />
 	
 	<target name="clean">
 		<delete dir="dist" />
