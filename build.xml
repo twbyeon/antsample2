@@ -1,5 +1,5 @@
 <?xml version="1.0" ?> 
-<project name="AntExample1" default="build" xmlns:sonar="antlib:org.sonar.ant">
+<project name="AntExample1" default="all" xmlns:sonar="antlib:org.sonar.ant">
 
 	<property name="src.dir" value="src" />
 	<property name="build.dir" value="target" />
@@ -53,6 +53,9 @@
 		<!-- Execute SonarQube Scanner for Ant Analysis -->
 		<sonar:sonar />
 	</target>
+	
+	<!-- ========= The main target "all" ========= -->
+	<target name="all" depends="clean,build,scompile,sonar" />
 	
 	<target name="clean">
 		<delete dir="dist" />
