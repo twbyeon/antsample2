@@ -14,7 +14,7 @@
 	<property name="sonar.projectName" value="Example of SonarQube Scanner for Ant Usage" />
 	<property name="sonar.projectVersion" value="1.0" />
 	<property name="sonar.sources" value="src" />
-	<property name="sonar.binaries" value="target" />
+	<property name="sonar.binaries" value="extlib" />
 	<property name="sonar.sourceEncoding" value="UTF-8" />
 
 	<path id="compile.classpath">
